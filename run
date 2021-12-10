@@ -15,6 +15,7 @@ sys.path.append(f'./{puzzle_dir}/')
 if len(sys.argv) > 2 and sys.argv[2] == '--test':
     print(f'Running tests on day {bare_puzzle_number}')
     importlib.import_module(f'{puzzle_dir}.test')
+    print('Tests complete')
     sys.exit(0)
 
 day = importlib.import_module(f'{puzzle_dir}.run')
